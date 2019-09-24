@@ -8,15 +8,13 @@
 }
 
 .missao-sobre p{
-	font-size: 18px;
-	line-height: 25px;
 	margin-bottom: .1em;
 	padding-right: 60px;
+	@include tipo-1(18);
 }
 
 .missao-sobre ul li{
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 18px;
+	@include tipo-2(18);
 	line-height: 30px;
 }
 
@@ -37,18 +35,16 @@
 
 .quote-clientes p{
 	text-align: center;
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 18px;
-	line-height: 25px;
 	font-style: italic;
 	margin-bottom: 20px;
+	@include tipo-2(18);
 }
 
 .quote-clientes cite{
-	font-size: 18px;
 	font-weight: bold;
 	float: right;
 	font-style: normal;
+	@include tipo-1(18);
 }
 
 /* Plugin de Slide*/
