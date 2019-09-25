@@ -11,6 +11,10 @@
 
 .contato-form{
 	padding-right: 60px;
+	@include d(m) {
+		padding-right: 0px;
+		margin-bottom: 40px;
+	}
 }
 
 .contato-form label{

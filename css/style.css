@@ -700,14 +700,39 @@ img {
   z-index: 10;
 }
 
+@media only screen and (max-width: 767px) {
+  .header {
+    position: relative;
+    padding-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header img {
+    margin: 0 auto 10px auto;
+  }
+}
+
 .header_menu {
   text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+  .header_menu {
+    text-align: center;
+  }
 }
 
 .header_menu ul li {
   display: inline-block;
   margin-left: 25px;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header_menu ul li {
+    margin: 5px;
+  }
 }
 
 .header_menu ul li a {
@@ -721,12 +746,23 @@ img {
   line-height: 20px;
 }
 
-.header_menu ul li a:hover {
+@media only screen and (max-width: 767px) {
+  .header_menu ul li a {
+    border: 4px solid #000;
+    width: 136px;
+    display: block;
+    float: left;
+  }
+}
+
+.header_menu ul li a:hover, .header_menu ul li a.menu_ativo {
   color: #FFF;
 }
 
-.header_menu ul li a.menu-ativo {
-  color: #FFF;
+@media only screen and (max-width: 767px) {
+  .header_menu ul li a:hover, .header_menu ul li a.menu_ativo {
+    border-color: #FFF;
+  }
 }
 
 /* Introdução */
@@ -740,11 +776,26 @@ img {
   padding-top: 80px;
 }
 
+@media only screen and (max-width: 767px) {
+  .introducao {
+    margin-top: -20px;
+    padding-top: 40px;
+    background: url("../img/bg-mobile.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
 .introducao h1 {
   color: #FFF;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 48px;
+}
+
+@media only screen and (max-width: 767px) {
+  .introducao h1 {
+    font-size: 36px;
+  }
 }
 
 .quote-externo {
@@ -783,6 +834,12 @@ img {
   text-align: center;
   color: #FFF;
   padding-top: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .introducao-interna {
+    margin-top: 0px;
+  }
 }
 
 .introducao-interna h1 {
@@ -847,6 +904,12 @@ img {
   clear: both;
 }
 
+@media only screen and (max-width: 767px) {
+  .call {
+    padding-top: 10px;
+  }
+}
+
 .call p {
   margin-bottom: 20px;
 }
@@ -891,6 +954,18 @@ img {
   z-index: -1;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .qualidade:after {
+    right: 75px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .qualidade:after {
+    display: none;
+  }
+}
+
 .qualidade img {
   margin: 0 auto;
 }
@@ -904,6 +979,12 @@ img {
 .qualidade_lista li {
   text-align: center;
   padding: 0 40px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .qualidade_lista li {
+    padding: 0 10px;
+  }
 }
 
 .qualidade_lista li h3 {
@@ -986,6 +1067,21 @@ img {
   transition: all .5s ease;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .footer-redes ul li a {
+    border: 3px solid #fec63e;
+    display: block;
+    padding: 6px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .footer-redes ul li a img {
+    width: 26px;
+    height: 26px;
+  }
+}
+
 .footer-redes ul li a:hover {
   border-color: #FFF;
 }
@@ -1055,11 +1151,27 @@ img {
   line-height: 25px;
 }
 
+@media only screen and (max-width: 767px) {
+  .missao-sobre p {
+    padding-right: 0px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 .missao-sobre ul li {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 18px;
   line-height: 25px;
   line-height: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .missao-sobre ul li {
+    font-size: 14px;
+    line-height: 20px;
+    line-height: 25px;
+  }
 }
 
 .foto-equipe {
@@ -1173,6 +1285,20 @@ img {
   font-size: 36px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .produto-item h2 {
+    top: -150px;
+    margin-bottom: -56px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .produto-item h2 {
+    top: -100px;
+    margin-bottom: -68px;
+  }
+}
+
 .produto-item h2:after, .produto-item h2:before {
   content: "";
   display: block;
@@ -1185,6 +1311,18 @@ img {
 .produto-icone {
   background: #000;
   padding: 70px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .produto-icone {
+    padding: 41px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .produto-icone {
+    padding: 41px 0;
+  }
 }
 
 .produto-icone img {
@@ -1203,6 +1341,24 @@ img {
   line-height: 25px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .produto-info p {
+    height: 122px;
+    padding: 20px 30px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .produto-info p {
+    height: auto;
+    padding: 20px 30px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 .produto-info ul li {
   background: #fec63e;
   text-transform: uppercase;
@@ -1215,6 +1371,23 @@ img {
   font-size: 18px;
   line-height: 25px;
   line-height: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .produto-info ul li {
+    width: 181px;
+    height: 49px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .produto-info ul li {
+    width: 149px;
+    height: 49px;
+    padding-top: 14px;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .produto-info ul li:nth-child(1), .produto-info ul li:nth-child(2) {
@@ -1243,6 +1416,12 @@ img {
 
 .form {
   padding-right: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+  .form {
+    padding-right: 0px;
+  }
 }
 
 .form label {
@@ -1314,6 +1493,12 @@ img {
 
 .orcamento-dados ul {
   padding-right: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+  .orcamento-dados ul {
+    padding-right: 0px;
+  }
 }
 
 .orcamento-dados ul li {
@@ -1431,6 +1616,13 @@ img {
   padding-right: 60px;
 }
 
+@media only screen and (max-width: 767px) {
+  .contato-form {
+    padding-right: 0px;
+    margin-bottom: 40px;
+  }
+}
+
 .contato-form label {
   display: block;
   margin-bottom: 4px;
@@ -1517,140 +1709,3 @@ img {
 .contato-mapa {
   margin-bottom: 60px;
 }
-
-/* Estilo para tablets*/
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* Qualidade Home */
-  .qualidade:after {
-    right: 75px;
-  }
-  .qualidade_lista li {
-    padding: 0 10px;
-  }
-  /* Footer */
-  .footer-redes ul li a {
-    border: 3px solid #fec63e;
-    display: block;
-    padding: 6px;
-  }
-  .footer-redes ul li a img {
-    width: 26px;
-    height: 26px;
-  }
-  /* Produtos */
-  .produto-item h2 {
-    top: -150px;
-    margin-bottom: -56px;
-  }
-  .produto-icone {
-    padding: 41px 0;
-  }
-  .produto-info p {
-    height: 122px;
-    padding: 20px 30px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .produto-info ul li {
-    width: 181px;
-    height: 49px;
-  }
-}
-
-/* Final do estilo para tablet */
-/* Estilo para smartphones*/
-@media only screen and (max-width: 767px) {
-  /* Header */
-  .header {
-    position: relative;
-    padding-bottom: 0px;
-  }
-  .header img {
-    margin: 0 auto 10px auto;
-  }
-  .header_menu {
-    text-align: center;
-  }
-  .header_menu ul li {
-    margin: 5px;
-  }
-  .header_menu ul li a {
-    border: 4px solid #000;
-    width: 136px;
-    display: block;
-    float: left;
-  }
-  .header_menu ul li a:hover {
-    border-color: #FFF;
-  }
-  .header_menu ul li a.menu-ativo {
-    border-color: #FFF;
-  }
-  /* Introdução */
-  .introducao h1 {
-    font-size: 36px;
-  }
-  .introducao {
-    margin-top: -20px;
-    padding-top: 40px;
-    background: url("../img/bg-mobile.jpg") no-repeat center;
-    background-size: cover;
-  }
-  /* Introdução Interna*/
-  .introducao-interna {
-    margin-top: 0px;
-  }
-  /* Call */
-  .call {
-    padding-top: 10px;
-  }
-  /* Qualidade Home */
-  .qualidade:after {
-    display: none;
-  }
-  /* Sobre */
-  .missao-sobre p {
-    padding-right: 0px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .missao-sobre ul li {
-    font-size: 14px;
-    line-height: 20px;
-    line-height: 25px;
-  }
-  /* Produtos */
-  .produto-item h2 {
-    top: -100px;
-    margin-bottom: -68px;
-  }
-  .produto-icone {
-    padding: 41px 0;
-  }
-  .produto-info p {
-    height: auto;
-    padding: 20px 30px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .produto-info ul li {
-    width: 149px;
-    height: 49px;
-    padding-top: 14px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .form {
-    padding-right: 0px;
-  }
-  .orcamento-dados ul {
-    padding-right: 0px;
-  }
-  /* Contato */
-  .contato-form {
-    padding-right: 0px;
-    margin-bottom: 40px;
-  }
-}
-
-/* Final do estilo para smartphone */
